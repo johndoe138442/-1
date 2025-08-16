@@ -17,9 +17,10 @@
             font-family: Arial, sans-serif;
             background-color: #f0fdf4;
             height: 100vh;
+            height: 100dvh; /* モバイル対応 */
             display: flex;
             flex-direction: column;
-            padding: 8px;
+            padding: 4px;
             overflow: hidden;
         }
         
@@ -27,7 +28,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 8px;
+            padding: 4px;
+            flex-shrink: 0;
         }
         
         .player-area.top {
@@ -102,12 +104,12 @@
         }
         
         .square {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 20px;
             cursor: pointer;
             border: 2px solid #d97706;
             border-radius: 4px;
@@ -137,11 +139,12 @@
         }
         
         .winner-message {
-            margin: 8px;
-            padding: 8px;
+            margin: 4px;
+            padding: 4px;
             background-color: #fef3c7;
             border-radius: 8px;
             text-align: center;
+            flex-shrink: 0;
         }
         
         .winner-title {
